@@ -1,0 +1,12 @@
+
+# Initialise swarm
+
+Docker swarm init --advertise-addr address
+
+# join swarm
+
+docker swarm join --token token
+
+#check nodes in swarm
+
+Docker node ls

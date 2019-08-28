@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+
+  Web:
+    image: nginx
+	ports:
+	 - 8080:80
+	volumes:
+     - ./strawhat:/usr/share/nginx/html
+	
+  database:
+    image: redis
